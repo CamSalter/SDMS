@@ -10,7 +10,8 @@ const LandingPage = () => {
         <div className='container'>
           <div className='row'>
             <div className='brand-name-column'>
-              <h1 className='app-name'>__Docu-sec</h1>
+              <h1 className='app-name'>_Docu-sec</h1>
+              <div class='hamburger-menu-container'>
               <div class='hamburger-menu'>
                 <input id='menu__toggle' type='checkbox' />
                 <label class='menu__btn' for='menu__toggle'>
@@ -40,7 +41,12 @@ const LandingPage = () => {
                   </li>
                   <li>
                     <a class='menu__item' href='#'>
-                      Twitter
+                      Log In
+                    </a>
+                  </li>
+                  <li>
+                    <a class='menu__item' href='#'>
+                      Sign Up
                     </a>
                   </li>
                 </ul>
@@ -48,6 +54,16 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
+        </div>
+        <div className='intro-block'>
+            <h2 className='intro-title-one'>
+              Empowering individuals and organizations
+            </h2>
+            <h2 className='intro-title-two'>to securely manage and protect their</h2>
+            <h2 className='intro-title-three'>sensitive information online.{' '}</h2>
+            
+            <h3 className="mission-statement" data-text="We believe in the power of trust and transparency in the digital age, and strive to provide a secure document management system that utilizes the latest in encryption technology and the trusted data format."></h3>
+          </div>
       </header>
     </div>
   );
