@@ -1,0 +1,176 @@
+// $primary-color: rgb(233, 165, 63);
+// $secondary-color: rgb(202, 65, 81);
+// $tertiary-color: rgb(2, 110, 129);
+// $quaternary-color: rgb(42, 88, 131);
+// $background-color: rgb(1, 53, 81);
+
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+// .landing-page {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   text-align: center;
+//   height: 100vh;
+//   background-color: $background-color;
+
+//   .logo {
+//     border-radius: 10px;
+//     width: 400px;
+//     margin-top: 50px;
+//   }
+
+
+//   .subtitle {
+//     font-size: 18px;
+//     margin-top: 20px;
+//     font-family: 'Montserrat', sans-serif;
+//     color: ivory;
+//   }
+
+//   .description {
+//     color: ivory;
+//     margin: 50px;
+//     font-size: 18px;
+//     font-family: 'Montserrat', sans-serif;
+//   }
+
+//   .cta-section {
+//     margin-top: 50px;
+//     display: flex;
+//     justify-content: center;
+
+//     .cta-button {
+//       padding: 15px 30px;
+//       font-size: 18px;
+//       font-weight: bold;
+//       font-family: 'Montserrat', sans-serif;
+//       border-radius: 20px;
+//       margin: 0 20px;
+//       text-decoration: none;
+//       color: $primary-color;
+//       background-color: $tertiary-color;
+//       transition: background-color 0.3s ease, color 0.3s ease;
+
+//       &:hover {
+//         background-color: $secondary-color;
+//         color: $background-color;
+//         cursor: pointer;
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 768px) {
+//   .landing-page {
+//     .title {
+//       font-size: 28px;
+//     }
+
+//     .cta-section {
+//       flex-direction: column;
+//       align-items: center;
+
+//       .cta-button {
+//         margin: 20px 0;
+//       }
+//     }
+//   }
+// }
+
+
+// Import Materialize CSS
+@import 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css';
+
+// Custom color variables
+$primary-color: rgb(233, 165, 63);
+$secondary-color: rgb(202, 65, 81);
+$tertiary-color: rgb(2, 110, 129);
+$quaternary-color: rgb(42, 88, 131);
+$background-color: #033399;
+
+// Import Montserrat font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+// Style the landing page
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 1000vh;
+  background-color: $background-color;
+
+  // Style the logo
+  .logo {
+    border-radius: 10px;
+    width: 400px;
+    margin-top: 50px;
+  }
+
+  // Style the subtitle
+  .subtitle {
+    font-size: 18px;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: ivory;
+  }
+
+  // Style the description
+  .description {
+    color: ivory;
+    margin: 50px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  // Style the CTA section
+  .cta-section {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+    // Style the CTA button
+    .cta-button {
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      font-family: 'Montserrat', sans-serif;
+      border-radius: 20px;
+      margin: 0 20px;
+      text-decoration: none;
+      color: $primary-color;
+      background-color: ivory;
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        background-color: $secondary-color;
+        color: $background-color;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// Media query for small screens
+@media (max-width: 768px) {
+  .landing-page {
+    // Style the title
+    .title {
+      font-size: 28px;
+    }
+
+    // Style the CTA section
+    .cta-section {
+      flex-direction: column;
+      align-items: center;
+
+      // Style the CTA button
+      .cta-button {
+        margin: 20px 0;
+      }
+    }
+  }
+}
+
+

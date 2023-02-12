@@ -1,0 +1,59 @@
+$primary-color: rgb(233, 165, 63);
+$secondary-color: rgb(202, 65, 81);
+$tertiary-color: rgb(2, 110, 129);
+$quaternary-color: rgb(42, 88, 131);
+$background-color: rgb(1, 53, 81);
+
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-color;
+
+  form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: $primary-color;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+
+      &:focus {
+        outline: none;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      &:hover {
+        background-color: lighten($tertiary-color, 10%);
+      }
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      background-color: $primary-color;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $secondary-color;
+      }
+    }
+  }
+}
